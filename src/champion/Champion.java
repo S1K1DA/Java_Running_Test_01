@@ -65,4 +65,7 @@ public abstract class Champion {
         return name;
     }
 
+    public int getHp() {
+        return hp;
+    }
 }
