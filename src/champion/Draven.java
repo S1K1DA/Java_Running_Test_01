@@ -2,10 +2,12 @@ package champion;
 
 import common.GameConstants;
 
+import static common.GameConstants.BASE_ATTACK_DAMAGE;
+
 public class Draven extends Champion {
 
     public Draven() {
-        super("Draven", 1, 120, 20, 4);
+        super("Draven", 1, 120, BASE_ATTACK_DAMAGE, 4);
     }
 
     @Override
@@ -14,7 +16,7 @@ public class Draven extends Champion {
         int qDamage = attackDamage + 10;
 
         // 치명타 확률 상수 사용
-        if(Math.random() * 100 < GameConstants.EZREAL_CRITICAL) {
+        if(Math.random() * 100 < GameConstants.DRAVEN_CRITICAL) {
             qDamage *= 2;
             System.out.println("치명타!");
         }

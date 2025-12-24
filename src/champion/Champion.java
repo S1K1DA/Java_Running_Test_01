@@ -61,4 +61,8 @@ public abstract class Champion {
         return createdCount;
     }
 
+    public String getName() {
+        return name;
+    }
+
 }

@@ -2,10 +2,12 @@ package champion;
 
 import common.GameConstants;
 
+import static common.GameConstants.BASE_ATTACK_DAMAGE;
+
 public class Ezreal extends Champion {
 
     public Ezreal() {
-        super("Ezreal", 1, 100, 15, 3);
+        super("Ezreal", 1, 100, BASE_ATTACK_DAMAGE, 3);
     }
 
     @Override
